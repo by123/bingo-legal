@@ -4,11 +4,13 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Bingo! — Privacy Policy</title>
+<link rel="icon" href="icon.png">
+<link rel="apple-touch-icon" href="icon.png">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <div class="wrap">
-  <a class="brand" href="index.html"><span class="dot">✓</span> Bingo!</a>
+  <a class="brand" href="index.html"><img class="dot" src="icon.png" alt="" width="30" height="30"> Bingo!</a>
 
   <div class="card">
     <h1>Privacy Policy</h1>
@@ -19,7 +21,8 @@
     <div class="tldr">
       <p><strong>The short version</strong></p>
       <ul>
-        <li>We do <strong>not</strong> collect, transmit, sell, or store any of your personal data.</li>
+        <li>The App does <strong>not</strong> collect, transmit, sell, or store any of your personal data.</li>
+        <li>The one exception is email: if you write to us, we have your message and your address — nothing more.</li>
         <li>Your tasks stay in <strong>Apple Reminders</strong> or in Bingo's own on-device storage — your choice.</li>
         <li>Your background photo and settings never leave your iPhone.</li>
         <li>There are <strong>no</strong> third-party analytics, advertising, or tracking SDKs in the App.</li>
@@ -66,6 +69,16 @@
       <li>When a shortcut runs, Bingo draws the wallpaper on your device and passes the image to the Shortcuts app's built-in "Set Wallpaper" action. The image stays on your device throughout.</li>
     </ul>
 
+    <h2 id="email">When you email us</h2>
+    <p>The App collects nothing. But if you choose to write to us for support, that email is personal data and it is handled outside the App, so here is what happens to it:</p>
+    <ul>
+      <li><strong>What we receive.</strong> Your email address, whatever you put in the message, and anything you attach — typically your iPhone model, iOS version, and a description of the problem. Please do not send us anything you would not want in an ordinary inbox.</li>
+      <li><strong>Why.</strong> To answer you and to fix the bug you reported. That is the only use.</li>
+      <li><strong>Who else sees it.</strong> Our mailbox is hosted by Tencent (QQ Mail), and your own email provider handles the message as well. Both process it under their own privacy policies.</li>
+      <li><strong>How long.</strong> We keep support correspondence for as long as it is useful for handling follow-ups and understanding recurring bugs, and no more than 24 months. Ask us to delete an exchange and we will.</li>
+      <li><strong>What we do not do.</strong> We do not build a mailing list, do not use your address for marketing, and do not pass it to anyone else.</li>
+    </ul>
+
     <h2>Network activity</h2>
     <p>Bingo has no backend and does not send your content over the network. The only network requests the App can make are ones you trigger yourself:</p>
     <ul>
@@ -79,7 +92,7 @@
       <li><strong>Apple Reminders / EventKit</strong> — where your tasks live if you choose that storage mode. If you have iCloud sync turned on for Reminders in iOS Settings, Apple syncs that list between your devices under <a href="https://www.apple.com/legal/privacy/">Apple's Privacy Policy</a>. That sync is between you and Apple; we are not involved and have no access to it.</li>
       <li><strong>Shortcuts</strong> — installs the shortcuts and sets the wallpaper.</li>
       <li><strong>Photos</strong> — supplies the single background image you pick.</li>
-      <li><strong>App Store</strong> — distributes the App and handles any purchase, should one ever be offered. Apple does not share your identity with us.</li>
+      <li><strong>App Store</strong> — distributes the App and handles any purchase, should one ever be offered. Apple does not share your identity with us. Apple does give developers aggregate, anonymised statistics (downloads, crashes, retention), and — only if you turned on <em>Share With App Developers</em> in iOS Settings › Privacy &amp; Security › Analytics &amp; Improvements — crash logs for this App. Those come from Apple, not from anything in the App, and do not identify you. You can turn that setting off at any time.</li>
     </ul>
     <p>No other third-party service is used.</p>
 
@@ -89,13 +102,15 @@
       <li><strong>Remove your background photo</strong> in Settings and the copy in Bingo's sandbox is deleted immediately.</li>
       <li><strong>Delete the App</strong> and iOS removes its entire sandbox — the local task file, the background image, and all preferences go with it. Tasks you kept in Apple Reminders stay in Reminders, because they were always yours and never ours; delete them there if you want them gone.</li>
     </ul>
-    <p>Because we never receive your data, there is nothing for us to retain and nothing for us to delete on your behalf.</p>
+    <p>Because the App never sends us your data, there is nothing for us to retain and nothing for us to delete on your behalf. The single exception is a support email you chose to send — see <a href="#email">When you email us</a> for how long we keep those and how to have one deleted.</p>
 
     <h2>Your rights</h2>
     <p>Privacy laws such as the GDPR (EEA/UK), the CCPA/CPRA (California), and PIPL (China) give you rights to access, correct, export, or delete personal data a company holds about you, and to know whether it is sold or shared. We hold none: Bingo collects no personal data and operates no servers, so there is no file on you to produce, correct, or erase, and nothing is ever sold or shared. The data described above is in your own hands, on your own device, and you can inspect or delete all of it at any time using the App, the Reminders app, and iOS Settings. If you want to confirm any of this, write to us at the address below.</p>
+    <p>Two specifics, because the laws ask for them by name. <strong>California:</strong> we have not sold or shared personal information in the preceding twelve months, we do not do so now, and we will never discriminate against you for exercising a privacy right. <strong>EEA/UK:</strong> for the little data that does reach us — a support email you chose to send — our lawful basis is our legitimate interest in answering you, and you may lodge a complaint with your local data protection authority if you think we have handled it wrongly.</p>
+    <p><strong>Where data goes.</strong> Nothing is transferred anywhere by the App; it never leaves your device. A support email travels to our mailbox in China, and these web pages are served by GitHub's content delivery network, which may serve them from a location outside your country. Those are the only two crossings, and both are ones you initiate.</p>
 
     <h2>Children's privacy</h2>
-    <p>Bingo is a general-audience task app and is not directed at children under 13. It collects no personal information from anyone, children included. If you believe a child has somehow provided us with personal information, contact us and we will look into it — though, again, we have no store of data to check.</p>
+    <p>Bingo is a general-audience task app and is not directed at children. It collects no personal information from anyone, children included. Our Terms ask that users be at least 13, and at least 16 in the European Economic Area and the United Kingdom, unless local law sets a lower age of consent; below that age a parent or guardian should agree and supervise. If you believe a child has emailed us personal information, write to us and we will delete it — that mailbox is the only place it could be.</p>
 
     <h2>Security</h2>
     <p>Your data is protected by iOS's own protections: app sandboxing, device encryption while locked, and per-app permission prompts for Reminders and Photos. Keeping your device passcode enabled and iOS up to date is the most effective thing you can do to protect it. No data is in transit to us, so there is no transmission for anyone to intercept.</p>

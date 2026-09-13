@@ -47,9 +47,9 @@ body {
   color: var(--ink); text-decoration: none; margin-bottom: 22px;
 }
 .brand .dot {
-  width: 30px; height: 30px; border-radius: 10px;
-  background: var(--rose); display: grid; place-items: center;
-  font-size: 16px; box-shadow: 0 3px 10px rgba(255, 158, 189, .45);
+  width: 30px; height: 30px; border-radius: 9px;
+  display: block; object-fit: cover;
+  box-shadow: 0 3px 10px rgba(255, 158, 189, .45);
 }
 
 .card {
@@ -136,7 +136,11 @@ code {
 
 /* index */
 .hub { text-align: center; }
-.hub .big { font-size: 46px; line-height: 1; margin-bottom: 6px; }
+.hub .big {
+  width: 88px; height: 88px; border-radius: 23px;
+  display: block; margin: 0 auto 12px; object-fit: cover;
+  box-shadow: 0 10px 26px rgba(255, 158, 189, .42);
+}
 .hub p.sub { color: var(--ink-soft); font-size: 15px; margin-bottom: 26px; }
 .links { display: grid; gap: 12px; }
 .pill {
