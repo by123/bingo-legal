@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bingo! — Privacy Policy</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="brand" href="index.html"><span class="dot">✓</span> Bingo!</a>
+
+  <div class="card">
+    <h1>Privacy Policy</h1>
+    <span class="date">Last updated: September 13, 2026</span>
+
+    <p class="lede">Bingo! ("Bingo", "the App") turns your task list into an iPhone Lock Screen wallpaper. It has no accounts, no servers, and no analytics. Everything it needs lives on your device.</p>
+
+    <div class="tldr">
+      <p><strong>The short version</strong></p>
+      <ul>
+        <li>We do <strong>not</strong> collect, transmit, sell, or store any of your personal data.</li>
+        <li>Your tasks stay in <strong>Apple Reminders</strong> or in Bingo's own on-device storage — your choice.</li>
+        <li>Your background photo and settings never leave your iPhone.</li>
+        <li>There are <strong>no</strong> third-party analytics, advertising, or tracking SDKs in the App.</li>
+        <li>Bingo has no backend. There is no server for us to store anything on.</li>
+      </ul>
+    </div>
+
+    <main>
+
+    <h2>Who we are</h2>
+    <p>Bingo is an independent iOS app developed and published by an individual developer ("we", "us"). This policy explains what happens to information when you use the App. It applies to the Bingo iOS app and to these pages.</p>
+
+    <h2>What Bingo stores, and where</h2>
+    <p>All of the following is stored on your device only, inside the app's sandbox or inside Apple's own apps. None of it is transmitted to us.</p>
+    <ul>
+      <li><strong>Your tasks.</strong> Depending on the storage mode you pick in Settings, task titles, due dates, completion state, and their order are stored either in <strong>Apple Reminders</strong> (in the list you select) or in a local file inside Bingo's app sandbox (<code>bingo-todos.json</code>).</li>
+      <li><strong>Your background photo.</strong> If you choose a photo for your Lock Screen background, Bingo copies that single image into its own sandbox (<code>background.jpg</code>) so it can redraw the wallpaper later. It does not read, scan, index, or upload the rest of your photo library.</li>
+      <li><strong>Your preferences.</strong> Card title, card position, opacity, dimming, bottom spacing, appearance, language, the selected list, and your screen dimensions are stored in the app's own preferences (<code>UserDefaults</code>). Screen dimensions are read so the generated wallpaper matches your iPhone exactly.</li>
+      <li><strong>The generated wallpaper image.</strong> It is drawn on your device and handed directly to the Shortcuts app so it can be set as your Lock Screen. It is not sent anywhere else.</li>
+    </ul>
+
+    <h2>Permissions Bingo asks for</h2>
+    <p>iOS will ask you before Bingo can access either of these, and you can change your mind at any time in <strong>Settings › Privacy &amp; Security</strong>.</p>
+    <ul>
+      <li><strong>Reminders (full access).</strong> Used to read the tasks in the list you select and to add or complete tasks you act on. Full access is required because Bingo both reads and writes tasks. Keeping tasks in Reminders is what lets Siri and your other Apple devices stay in sync. Bingo only touches the list you select; it does not read your other lists' contents for any other purpose than letting you pick one.</li>
+      <li><strong>Photos.</strong> Used only when you tap to pick a background image. Bingo reads the one photo you select. It does not write to your photo library and does not access photos you did not choose.</li>
+    </ul>
+    <p>If you decline either permission, the rest of the App keeps working — tasks fall back to on-device storage, and the wallpaper falls back to a plain colored background.</p>
+
+    <h2>What Bingo does not do</h2>
+    <ul>
+      <li>No account, sign-up, login, or email address is required or accepted.</li>
+      <li>No analytics, crash-reporting, attribution, or advertising SDK is embedded in the App.</li>
+      <li>No tracking as defined by Apple's App Tracking Transparency framework. Bingo does not access the advertising identifier (IDFA) and does not link your activity with data from other companies.</li>
+      <li>No selling or sharing of personal information with anyone, for any purpose.</li>
+      <li>No profile of you is built, on your device or anywhere else.</li>
+    </ul>
+    <p>The App ships an Apple <code>PrivacyInfo.xcprivacy</code> manifest that declares <strong>no collected data types</strong> and no tracking domains, which matches the "Data Not Collected" label on the App Store.</p>
+
+    <h2>Shortcuts and setting your wallpaper</h2>
+    <p>iOS gives no app a way to set the wallpaper directly, so the final step is performed by the Shortcuts app on your device. Two things follow from this:</p>
+    <ul>
+      <li>Bingo offers to install three shortcuts. Tapping an install button opens an <strong>iCloud.com</strong> link in the Shortcuts app, where Apple shows you exactly what the shortcut does and you confirm the install. That request goes to Apple, not to us, and carries no information about you or your tasks.</li>
+      <li>When a shortcut runs, Bingo draws the wallpaper on your device and passes the image to the Shortcuts app's built-in "Set Wallpaper" action. The image stays on your device throughout.</li>
+    </ul>
+
+    <h2>Network activity</h2>
+    <p>Bingo has no backend and does not send your content over the network. The only network requests the App can make are ones you trigger yourself:</p>
+    <ul>
+      <li>Opening an Apple iCloud shortcut link when you tap an install button.</li>
+      <li>Opening this Privacy Policy, the Terms of Service, or the support page, which are loaded from GitHub Pages inside an in-app web view. GitHub may log standard web-server information such as your IP address and user agent when a page is requested, as any website does; see <a href="https://docs.github.com/site-policy/privacy-policies/github-privacy-statement">GitHub's Privacy Statement</a>. These pages carry no cookies, no analytics, and no trackers.</li>
+    </ul>
+
+    <h2>Third-party services</h2>
+    <p>Bingo integrates only with Apple's own frameworks and apps:</p>
+    <ul>
+      <li><strong>Apple Reminders / EventKit</strong> — where your tasks live if you choose that storage mode. If you have iCloud sync turned on for Reminders in iOS Settings, Apple syncs that list between your devices under <a href="https://www.apple.com/legal/privacy/">Apple's Privacy Policy</a>. That sync is between you and Apple; we are not involved and have no access to it.</li>
+      <li><strong>Shortcuts</strong> — installs the shortcuts and sets the wallpaper.</li>
+      <li><strong>Photos</strong> — supplies the single background image you pick.</li>
+      <li><strong>App Store</strong> — distributes the App and handles any purchase, should one ever be offered. Apple does not share your identity with us.</li>
+    </ul>
+    <p>No other third-party service is used.</p>
+
+    <h2>Data retention and deletion</h2>
+    <ul>
+      <li><strong>Delete a task</strong> and it is removed from wherever it was stored. If it lived in Reminders, deleting it in Bingo deletes it in Reminders.</li>
+      <li><strong>Remove your background photo</strong> in Settings and the copy in Bingo's sandbox is deleted immediately.</li>
+      <li><strong>Delete the App</strong> and iOS removes its entire sandbox — the local task file, the background image, and all preferences go with it. Tasks you kept in Apple Reminders stay in Reminders, because they were always yours and never ours; delete them there if you want them gone.</li>
+    </ul>
+    <p>Because we never receive your data, there is nothing for us to retain and nothing for us to delete on your behalf.</p>
+
+    <h2>Your rights</h2>
+    <p>Privacy laws such as the GDPR (EEA/UK), the CCPA/CPRA (California), and PIPL (China) give you rights to access, correct, export, or delete personal data a company holds about you, and to know whether it is sold or shared. We hold none: Bingo collects no personal data and operates no servers, so there is no file on you to produce, correct, or erase, and nothing is ever sold or shared. The data described above is in your own hands, on your own device, and you can inspect or delete all of it at any time using the App, the Reminders app, and iOS Settings. If you want to confirm any of this, write to us at the address below.</p>
+
+    <h2>Children's privacy</h2>
+    <p>Bingo is a general-audience task app and is not directed at children under 13. It collects no personal information from anyone, children included. If you believe a child has somehow provided us with personal information, contact us and we will look into it — though, again, we have no store of data to check.</p>
+
+    <h2>Security</h2>
+    <p>Your data is protected by iOS's own protections: app sandboxing, device encryption while locked, and per-app permission prompts for Reminders and Photos. Keeping your device passcode enabled and iOS up to date is the most effective thing you can do to protect it. No data is in transit to us, so there is no transmission for anyone to intercept.</p>
+
+    <h2>Changes to this policy</h2>
+    <p>If the App ever changes in a way that affects this policy, we will update this page and change the date at the top. Material changes will also be noted in the App Store release notes. Continuing to use the App after an update means you accept the revised policy.</p>
+
+    <h2>Contact</h2>
+    <p>Questions about privacy, or anything else about the App: <a href="mailto:by7778889990@gmail.com">by7778889990@gmail.com</a>. We read every message and usually reply within a few days.</p>
+
+    </main>
+  </div>
+
+  <p class="foot">
+    <a href="index.html">Home</a>·<a href="terms-of-service.html">Terms of Service</a>·<a href="support.html">Support</a>
+  </p>
+</div>
+</body>
+</html>
