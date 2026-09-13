@@ -151,7 +151,8 @@ code {
   width: 34px; height: 34px; border-radius: 12px; flex: none;
   display: grid; place-items: center; font-size: 17px;
 }
-.pill small { display: block; font-weight: 500; font-size: 13px; color: var(--ink-soft); }
+.pill > span:last-child { text-align: left; }
+.pill small { display: block; font-weight: 500; font-size: 13px; color: var(--ink-soft); line-height: 1.45; }
 
 @media (max-width: 520px) {
   body { padding: 26px 14px 48px; }
